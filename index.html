@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oh my food</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>                          <!-- header -->
+        <div>
+            <img class="header__logo"src="images/logo/ohmyfood.png" alt="logo">
+            <form class="header__form" action="#" method="get">
+                <i class="fas fa-map-marker-alt">
+                </i>
+                <input type="text" class="header__input" placeholder="Paris, Belleville">
+            </form>
+
+            <section>
+                <h1>Réservez le menu qui vous convient</h1>
+                <p>
+                Découvrez des restaurants d'exception, sélectionnés par nos soins.
+                </p>
+                <button type="submit" class="btn">Explorer nos restaurants</button>           
+            </section>
+        </div>
+    </header>
+    
+    <main>                          <!-- main -->
+        <section class="function">
+            <h2>Fonctionnement</h2>
+                <ol class="function__list">
+                    <li >
+                        <i class="fas fa-mobile-alt"></i>
+                        <a href="#">Choisissez un restaurant</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-list-ul"></i>
+                        <a href="#">Composez votre menu</a>
+                    </li>
+                    <li class="function__list--color">
+                        <i class="fas fa-store"></i>
+                        <a href="#">Dégustez au restaurant</a>
+                    </li>
+                </ol>
+        </section>
+
+        <section class="restaurants">
+            <h2>Restaurants</h2>
+                <div class="restaurants__card">
+                    <a href="#">
+                        <article>
+                            <img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="plat gastronomique sur une table">
+                            <div class="restaurants__card--text">
+                                <h3>La palette du goût</h3>
+                                <p>Ménilmontant</p>
+                            </div>
+                            <div class="restaurants__card--heart">
+                                <i class="fa-regular fa-heart"></i>
+                                <i class="fa-solid fa-heart"></i>
+                            </div>
+                        </article>
+                    </a>
+                </div>
+        </section>
+
+        
+    </main>
+</body>
+</html>
