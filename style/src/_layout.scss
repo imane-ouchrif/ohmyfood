@@ -1,0 +1,37 @@
+/* *************** LAYOUT *************** */
+
+// couleurs variables
+
+$green-light: #99E2D0;
+$green-dark: #008766;
+$blue-light: #89C8FA;
+$blue-dark: #003A68;
+$purple: #9356DC;
+$black: #000;
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+figure {
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+a {
+    text-decoration: none;
+    color: $black;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    padding: 14px 89px 13px 89px;
+}
