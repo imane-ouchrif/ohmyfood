@@ -8,6 +8,16 @@ $blue-light: #89C8FA;
 $blue-dark: #003A68;
 $purple: #9356DC;
 $black: #000;
+$grey-1: #F6F6F6;
+$grey-2: #EAEAEA;
+$white: #fff;
+
+/***************** global style *****************/
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
 
 ul {
     margin: 0;
@@ -29,9 +39,108 @@ a {
     text-decoration: none;
     color: $black;
 }
+/***************** header *****************/
 
-header {
+.logo {
     display: flex;
     justify-content: center;
     padding: 14px 89px 13px 89px;
+    font-size: 1.87rem;
+    .logo img {
+        padding: 0 19px 0 16px;
+    }
 }
+
+/***************** main header *****************/
+main header {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    form {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        width: 100%;
+        height: 50px;
+        gap: 17px;
+        background-color: #EAEAEA;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    }
+            input {
+                display: flex;
+                border: none;
+                font-size: 1rem;
+                background-color: #EAEAEA;
+                text-align: center;
+            }
+                section {
+                    background: $grey-1;
+                }
+                    h1 {
+                        font-size: 1.5rem;
+                    }
+                        & p {
+                            font-size: 1.12rem;
+                            font-weight: 300;
+                        }
+                            & .btn {
+                                display: inline-block;
+                                color: $white;
+                                width: 218px;
+                                height: 50px;
+                                border-radius: 25px;
+                                justify-content: center;
+                                text-align: center;
+                                line-height: 50px;
+                                background: var(--Button-Gradient, linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%));
+                                box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+                                font-size: 1rem;
+                                margin-bottom: 57px;
+                            }
+    }
+
+/***************** function *****************/
+
+    .function {
+        display: flex;
+        flex-direction: column;
+        margin: 48px 0 68px 0;
+            h2 {
+                margin: 0 80px 26px 20px;
+            }
+            ul {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 25px;
+                justify-content: center;
+                position: relative;
+            }
+                li {
+                    display: flex;
+                    width: 322.486px;
+                    height: 72.379px;
+                    gap: 15px;
+                    border-radius: 20px;
+                    font-size: 1rem;
+                    justify-content: center;
+                    align-items: center;
+                    background: var(--Background, #F6F6F6);
+                    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+                }   
+                    b {
+                        position: absolute;
+                        left: 20px;
+                        width: 24px;
+                        height: 24px;
+                        border-radius: 50%;
+                        background: $purple;
+                        color: #fff;
+                        font-size: 0.9rem;
+                        text-align: center;
+                        line-height: 24px;
+                    }
+}
+
+/***************** restos *****************/
+
