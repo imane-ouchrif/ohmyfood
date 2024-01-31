@@ -7,6 +7,7 @@ $green-dark: #008766;
 $blue-light: #89C8FA;
 $blue-dark: #003A68;
 $purple: #9356DC;
+$color-heart: Button Gradient;
 $black: #000;
 $grey-1: #F6F6F6;
 $grey-2: #EAEAEA;
@@ -160,6 +161,7 @@ main header {
             display: flex;
             flex-wrap: wrap;
             box-sizing: border-box;
+            gap: 18px;
         }
             a {
                 display: flex;
@@ -167,7 +169,6 @@ main header {
                 box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.10);
                 margin: 0 18px 0 17px;
                 position: relative;
-                width: 100%;
             }
                 img {
                     border-radius: 15px 15px 0 0;
@@ -187,16 +188,31 @@ main header {
                         font-weight: 500;
                     }
                         h3 {
-                        margin: 16px 63px 5px 13px;
+                            font-size: 1.1rem;
+                            margin: 16px 63px 5px 13px;
                     }
                         p {
                             margin: 0 80px 12px 13px;
                             font-weight: 300;
+                            font-size: 1rem;
                         }
-                            .fa-solid {
+                            .fa-regular {
                                 display: flex;
                                 position: absolute;
+                                right: 20px;
+                                bottom: 30px;
+                                width: 22px;
+                                height: 21px;
                             }
+                                .fa-solid  {
+                                    display: flex;
+                                    position: absolute;
+                                    right: 20px;
+                                    bottom: 30px;
+                                    width: 22px;
+                                    height: 21px;
+                                    color: $purple;
+                                }
 }
 
 /***************** footer *****************/
