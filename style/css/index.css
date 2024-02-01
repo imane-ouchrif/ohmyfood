@@ -155,17 +155,13 @@ main header .btn {
   gap: 18px;
   width: 100%;
 }
-.restaurants a {
-  display: flex;
-  border-radius: 15px;
-  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
-  margin: 0 18px 0 17px;
-  position: relative;
+.restaurants li {
   width: 100%;
 }
 .restaurants img {
   border-radius: 15px 15px 0 0;
   height: 221px;
+  width: 100%;
 }
 .restaurants b {
   display: flex;

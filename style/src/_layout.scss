@@ -172,17 +172,13 @@ main header {
             gap: 18px;
             width: 100%;
         }
-            a {
-                display: flex;
-                border-radius: 15px;
-                box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.10);
-                margin: 0 18px 0 17px;
-                position: relative;
+            li {
                 width: 100%;
             }
                 img {
                     border-radius: 15px 15px 0 0;
                     height: 221px;
+                    width: 100%;
                 }
                     b {
                         display: flex;
