@@ -37,6 +37,36 @@ a {
   padding: 0 19px 0 16px;
 }
 
+/***************** footer *****************/
+footer {
+  display: flex;
+  flex-direction: column;
+  padding: 22px 25px;
+  background: #353535;
+  gap: 16px;
+}
+footer img {
+  width: 180px;
+  height: 30px;
+  filter: invert(100%);
+}
+footer a {
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 500;
+}
+footer ul {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+footer i {
+  margin-right: 11px;
+  width: 11px;
+  height: 13px;
+}
+
+/* *************** HOME *************** */
 /***************** main header *****************/
 main header {
   display: flex;
@@ -113,7 +143,7 @@ main header .btn {
   min-width: 250p;
   width: 100%;
   height: 72.4px;
-  gap: 15px;
+  gap: 27px;
   margin: 0 20px 0 32px;
   border-radius: 20px;
   font-size: 1rem;
@@ -133,6 +163,9 @@ main header .btn {
   font-size: 0.9rem;
   text-align: center;
   line-height: 24px;
+}
+.function i:hover i:focus {
+  color: #9356DC;
 }
 
 /***************** restos *****************/
@@ -203,36 +236,5 @@ main header .btn {
   width: 22px;
   height: 21px;
 }
-
-/***************** footer *****************/
-footer {
-  display: flex;
-  flex-direction: column;
-  padding: 22px 25px;
-  background: #353535;
-  gap: 16px;
-}
-footer img {
-  width: 180px;
-  height: 30px;
-  filter: invert(100%);
-}
-footer a {
-  color: #fff;
-  font-size: 1rem;
-  font-weight: 500;
-}
-footer ul {
-  display: flex;
-  flex-direction: column;
-  gap: 7px;
-}
-footer i {
-  margin-right: 11px;
-  width: 11px;
-  height: 13px;
-}
-
-/* *************** HOME *************** */
 
 /*# sourceMappingURL=index.css.map */
