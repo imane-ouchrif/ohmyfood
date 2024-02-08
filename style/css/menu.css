@@ -86,7 +86,7 @@ main header .btn {
   justify-content: center;
   text-align: center;
   line-height: 50px;
-  background: var(--Button-Gradient, linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%));
+  background: linear-gradient(0deg, #9356DC, #FF79DA);
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
   font-size: 1rem;
   margin-bottom: 57px;
@@ -119,8 +119,8 @@ main header .btn {
   font-size: 1rem;
   justify-content: center;
   align-items: center;
-  background: var(--Background, #F6F6F6);
-  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+  background: #F6F6F6;
+  box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.15);
 }
 .function b {
   position: absolute;
@@ -157,6 +157,9 @@ main header .btn {
 }
 .restaurants li {
   width: 100%;
+}
+.restaurants figure {
+  position: relative;
 }
 .restaurants img {
   border-radius: 15px 15px 0 0;
