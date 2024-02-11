@@ -117,19 +117,21 @@ header img {
   font-weight: 300;
   position: relative;
   font-size: 1rem;
+  padding: 0 13px 0;
 }
 .menu h2::after {
   content: ""; /* Ajouter un contenu vide pour l'élément ::after */
   position: absolute;
   width: 40px;
   border-bottom: 3px solid #99E2D0;
-  left: 0;
+  left: 13px;
   bottom: -10px;
 }
 .menu ul {
   display: flex;
   gap: 12px;
   flex-direction: column;
+  padding: 12px 13px 0;
 }
 .menu li {
   display: flex;
@@ -146,6 +148,16 @@ header img {
 }
 .menu p {
   margin: 0;
+}
+.menu b {
+  display: flex;
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+.menu .price {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
 }
 
 /*# sourceMappingURL=menu.css.map */
