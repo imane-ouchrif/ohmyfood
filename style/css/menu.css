@@ -68,5 +68,40 @@ footer i {
 }
 
 /* *************** RESTO *************** */
+/* *************** HEADER *************** */
+header {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  text-align: center;
+  width: 100%;
+  height: 63px;
+  position: relative;
+  gap: 42px;
+}
+header .fa-arrow-left {
+  position: absolute;
+  left: 17px;
+  top: 20px;
+  width: 30px;
+  height: 30px;
+  color: #353535;
+}
+header img {
+  width: 100%;
+  height: 36px;
+  object-fit: contain;
+  position: absolute;
+  top: 14px;
+}
+
+/* *************** MAIN *************** */
+main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #F6F6F6;
+  gap: 40px;
+}
 
 /*# sourceMappingURL=menu.css.map */
