@@ -90,7 +90,7 @@ main header {
       margin: 0 20px 0 32px;
       border-radius: 20px;
       font-size: 1rem;
-      justify-content: center;
+      padding-left: 10%;
       align-items: center;
       background: $silver;
       box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.15);
@@ -109,8 +109,12 @@ main header {
       line-height: 24px;
     }
 
-    i:hover
-    i:focus {
+    i {
+      color: $gray;
+    }
+
+    li:hover i,
+    li:focus i{
       color: $purple;
     }
 
@@ -122,11 +126,11 @@ main header {
     display: flex;
     flex-direction: column;
     gap: 18px;
-    margin-bottom: 65px;
+    padding: 20px 20px 80px;
     background: $silver;
   
     h2 {
-      padding: 54px 80px 26px 20px;
+      padding: 30px 0;
       margin: 0;
       width: 100%;
     }
@@ -145,6 +149,13 @@ main header {
   
     figure {
       position: relative;
+    }
+
+    figcaption {
+      background-color: $white;
+      padding: 20px 15px;
+      margin-top: -5px;
+      border-radius: 0 0 15px 15px;
     }
   
     img {
@@ -168,11 +179,11 @@ main header {
   
     h3 {
       font-size: 1.1rem;
-      margin: 16px 63px 5px 13px;
+      margin: 0  0 5px;
     }
   
     p {
-      margin: 0 80px 12px 13px;
+      margin: 0;
       font-weight: 300;
       font-size: 1rem;
     }

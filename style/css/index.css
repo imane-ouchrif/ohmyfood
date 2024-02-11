@@ -46,9 +46,10 @@ footer {
   gap: 16px;
 }
 footer img {
-  width: 180px;
+  width: 100px;
   height: 30px;
   filter: invert(100%);
+  object-fit: contain;
 }
 footer a {
   color: #fff;
@@ -147,7 +148,7 @@ main header .btn {
   margin: 0 20px 0 32px;
   border-radius: 20px;
   font-size: 1rem;
-  justify-content: center;
+  padding-left: 10%;
   align-items: center;
   background: #F6F6F6;
   box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.15);
@@ -164,7 +165,11 @@ main header .btn {
   text-align: center;
   line-height: 24px;
 }
-.function i:hover i:focus {
+.function i {
+  color: #7E7E7E;
+}
+.function li:hover i,
+.function li:focus i {
   color: #9356DC;
 }
 
@@ -173,11 +178,11 @@ main header .btn {
   display: flex;
   flex-direction: column;
   gap: 18px;
-  margin-bottom: 65px;
+  padding: 20px 20px 80px;
   background: #F6F6F6;
 }
 .restaurants h2 {
-  padding: 54px 80px 26px 20px;
+  padding: 30px 0;
   margin: 0;
   width: 100%;
 }
@@ -193,6 +198,12 @@ main header .btn {
 }
 .restaurants figure {
   position: relative;
+}
+.restaurants figcaption {
+  background-color: #fff;
+  padding: 20px 15px;
+  margin-top: -5px;
+  border-radius: 0 0 15px 15px;
 }
 .restaurants img {
   border-radius: 15px 15px 0 0;
@@ -213,10 +224,10 @@ main header .btn {
 }
 .restaurants h3 {
   font-size: 1.1rem;
-  margin: 16px 63px 5px 13px;
+  margin: 0 0 5px;
 }
 .restaurants p {
-  margin: 0 80px 12px 13px;
+  margin: 0;
   font-weight: 300;
   font-size: 1rem;
 }

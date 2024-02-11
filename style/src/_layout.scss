@@ -11,6 +11,7 @@ $black: #000;
 $silver: #F6F6F6;
 $grey: #EAEAEA;
 $slate: #353535;
+$gray: #7E7E7E;
 $white: #fff;
 
 $btn: linear-gradient(0deg,#9356DC, #FF79DA);
@@ -68,9 +69,10 @@ footer {
   gap: 16px;
 
   img {
-    width: 180px;
+    width: 100px;
     height: 30px;
     filter: invert(100%);
+    object-fit: contain;
   }
 
   a {
