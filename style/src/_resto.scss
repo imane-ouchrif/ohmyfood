@@ -30,6 +30,34 @@ header {
 }
 
 /* *************** MAIN *************** */
+.heart {
+  border: none;
+  background-color: $silver;
+
+  & > * {
+    position: absolute;
+    top: 65%;
+    right: 30px;
+    color: $purple;
+  }
+  .fa-solid.fa-heart {
+    opacity: 0;
+  }
+  .fa-regular.fa-heart {
+    opacity: 1;
+  }
+  &:hover .fa-solid.fa-heart {
+    opacity: 1;
+  }
+  &:hover .fa-regular.fa-heart {
+    opacity: 0;
+  } 
+
+}
+.fa-check-circle {
+  transform: translate(50px, 0); 
+}
+
 .menu {
     width: 100%;
     display: flex;
@@ -41,6 +69,9 @@ header {
     position: relative;
     margin-top: -50px;
 
+    header {
+      position: relative;
+    }
 
     h1 {
       font-family: 'Shrikhand', sans-serif;
@@ -73,12 +104,13 @@ header {
 
       li {
         display: flex;
+        justify-content: space-between;
+        align-items: center;
         width: 90%;
         height: 69px;
         background-color: $white;
         border-radius: 15px;
         box-shadow: 0px 4.011px 15.043px 0px rgba(0, 0, 0, 0.10);
-        flex-direction: column;
         padding: 15px;
       }
 
@@ -102,22 +134,5 @@ header {
         display: flex;
         justify-content: flex-end;
         align-items: flex-end;
-      }
-
-      .btn {
-        display: block;
-        color: $white;
-        width: 189px;
-        height: 50px;
-        margin: 0 auto;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        border-radius: 25px;
-        background: $btn;
-        box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
-        font-size: 1rem;
-        margin-bottom: 40px;
-        border: none;
       }
 }
