@@ -30,6 +30,12 @@ header {
 }
 
 /* *************** MAIN *************** */
+
+main {
+    background-color: $silver;
+    padding-bottom: 40px;
+}
+
 .heart {
   border: none;
   background-color: $silver;
@@ -55,7 +61,15 @@ header {
 
 }
 .fa-check-circle {
-  transform: translate(50px, 0); 
+  width: 59px;
+  height: 69px;
+  transform: translateX(50px); 
+  background-color: $aqua;
+  transition: margin-left 0.3s; /* Ajouter une transition pour une animation fluide */
+}
+
+.fa-check-circle:hover {
+  margin-left: 20px; /* Déplacer la balise <b> vers la gauche au survol */
 }
 
 .menu {
@@ -111,7 +125,7 @@ header {
         background-color: $white;
         border-radius: 15px;
         box-shadow: 0px 4.011px 15.043px 0px rgba(0, 0, 0, 0.10);
-        padding: 15px;
+        padding: 0 15px 0;
       }
 
       h3 {
