@@ -68,6 +68,23 @@ footer i {
   height: 13px;
 }
 
+.btn { /* button menu */
+  display: block;
+  color: #fff;
+  width: 200px;
+  height: 50px;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 25px;
+  background: linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%);
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+  font-size: 1rem;
+  margin-bottom: 40px;
+  border: none;
+}
+
 /* *************** RESTO *************** */
 /* *************** HEADER *************** */
 header {
@@ -97,6 +114,33 @@ header img {
 }
 
 /* *************** MAIN *************** */
+.heart {
+  border: none;
+  background-color: #F6F6F6;
+}
+.heart > * {
+  position: absolute;
+  top: 65%;
+  right: 30px;
+  color: #9356DC;
+}
+.heart .fa-solid.fa-heart {
+  opacity: 0;
+}
+.heart .fa-regular.fa-heart {
+  opacity: 1;
+}
+.heart:hover .fa-solid.fa-heart {
+  opacity: 1;
+}
+.heart:hover .fa-regular.fa-heart {
+  opacity: 0;
+}
+
+.fa-check-circle {
+  transform: translate(50px, 0);
+}
+
 .menu {
   width: 100%;
   display: flex;
@@ -107,6 +151,9 @@ header img {
   z-index: 1;
   position: relative;
   margin-top: -50px;
+}
+.menu header {
+  position: relative;
 }
 .menu h1 {
   font-family: "Shrikhand", sans-serif;
@@ -135,12 +182,13 @@ header img {
 }
 .menu li {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
   width: 90%;
   height: 69px;
   background-color: #fff;
   border-radius: 15px;
   box-shadow: 0px 4.011px 15.043px 0px rgba(0, 0, 0, 0.1);
-  flex-direction: column;
   padding: 15px;
 }
 .menu h3 {
@@ -161,22 +209,6 @@ header img {
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
-}
-.menu .btn {
-  display: block;
-  color: #fff;
-  width: 189px;
-  height: 50px;
-  margin: 0 auto;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  border-radius: 25px;
-  background: linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%);
-  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
-  font-size: 1rem;
-  margin-bottom: 40px;
-  border: none;
 }
 
 /*# sourceMappingURL=menu.css.map */
