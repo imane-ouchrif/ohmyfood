@@ -87,30 +87,27 @@ footer i {
 
 /* *************** RESTO *************** */
 /* *************** HEADER *************** */
-header {
+body > header {
   display: flex;
-  justify-content: center;
-  flex-direction: row;
-  text-align: center;
   width: 100%;
   height: 63px;
-  position: relative;
-  gap: 42px;
 }
-header .fa-arrow-left {
-  position: absolute;
-  left: 17px;
-  top: 20px;
-  width: 30px;
-  height: 30px;
+body > header a {
+  display: flex;
+  width: 100%;
+  padding: 15px;
+  align-items: center;
+  justify-content: start;
+}
+body > header .fa-arrow-left {
   color: #353535;
 }
-header img {
+body > header img {
   width: 100%;
   height: 36px;
   object-fit: contain;
-  position: absolute;
-  top: 14px;
+  position: relative;
+  right: 12px;
 }
 
 /* *************** MAIN *************** */
@@ -155,6 +152,11 @@ main {
 }
 .menu header {
   position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+  height: 63px;
+  gap: 42px;
 }
 .menu h1 {
   font-family: "Shrikhand", sans-serif;
