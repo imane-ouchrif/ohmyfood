@@ -189,6 +189,7 @@ main {
   align-items: center;
   width: 90%;
   height: 69px;
+  position: relative;
   background-color: #fff;
   border-radius: 15px;
   box-shadow: 0px 4.011px 15.043px 0px rgba(0, 0, 0, 0.1);
@@ -202,17 +203,20 @@ main {
 .menu p {
   margin: 0;
   width: 287px;
+  font-size: 0.9rem;
 }
 .menu b {
   display: flex;
-  font-weight: 700;
+  position: absolute;
+  right: 17px;
+  bottom: 15px;
+  font-weight: 600;
   font-size: 0.9rem;
 }
 .menu .fa-check-circle {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 auto;
   width: 59px;
   height: 69px;
   transform: translateX(60px);
