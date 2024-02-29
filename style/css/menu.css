@@ -119,6 +119,7 @@ main {
 .heart {
   border: none;
   background-color: #F6F6F6;
+  padding: 0;
 }
 .heart > * {
   position: absolute;
@@ -128,6 +129,7 @@ main {
 }
 .heart .fa-solid.fa-heart {
   opacity: 0;
+  transition-duration: 1s;
 }
 .heart .fa-regular.fa-heart {
   opacity: 1;
@@ -212,6 +214,11 @@ main {
   bottom: 15px;
   font-weight: 600;
   font-size: 0.9rem;
+  transform: translateX(0px);
+  transition: all 300ms;
+}
+.menu:hover b {
+  transform: translateX(-30px);
 }
 .menu .fa-check-circle {
   display: flex;
@@ -223,7 +230,10 @@ main {
   background-color: #99E2D0;
   color: #fff;
   border-radius: 0 15px 15px 0;
-  transition: all 0.5s; /* Ajouter une transition pour une animation fluide */
+  transition: all 300ms; /* Ajouter une transition pour une animation fluide */
+}
+.menu:hover .fa-check-circle {
+  transform: translateX(0);
 }
 
 /*# sourceMappingURL=menu.css.map */
