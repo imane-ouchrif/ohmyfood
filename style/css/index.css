@@ -163,6 +163,8 @@ main header p {
 }
 @media (min-width: 1200px) {
   .function li {
+    display: flex;
+    flex-wrap: wrap;
     width: calc((100% - 50px) / 3);
   }
 }
@@ -206,8 +208,21 @@ main header p {
   gap: 18px;
   width: 100%;
 }
+@media (min-width: 1200px) {
+  .restaurants ul {
+    display: flex;
+    flex-direction: row;
+  }
+}
 .restaurants li {
   width: 100%;
+}
+@media (min-width: 1200px) {
+  .restaurants li {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+  }
 }
 .restaurants figure {
   position: relative;

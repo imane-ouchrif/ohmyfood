@@ -90,6 +90,8 @@ main header {
 
     @media (min-width: 1200px) {
       li {
+        display: flex;
+        flex-wrap: wrap;
         width: calc((100% - 50px) / 3);
       }
     }
@@ -140,9 +142,24 @@ main header {
       gap: 18px;
       width: 100%;
     }
+
+    @media (min-width: 1200px) {
+      & ul {
+        display: flex;
+        flex-direction: row;
+      }
+    }
   
     li {
       width: 100%;
+    }
+
+    @media (min-width: 1200px) {
+      li {
+        display: flex;
+        width: 80%;
+        margin: 0 auto;
+      }
     }
   
     figure {
