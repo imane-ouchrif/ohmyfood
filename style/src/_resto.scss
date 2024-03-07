@@ -135,25 +135,26 @@ main {
         transition: all 500ms;
       }
       & li:hover b {
-        transform: translateX(-30px);
+        transform: translateX(-50px);
       }
 
       .fa-check-circle {
-        display: none;
+        display: flex;
         justify-content: center;
         align-items: center;
         width: 59px;
         height: 69px;                                    
-        transform: translateX(60px); 
+        transform: translateX(40px); 
         background-color: $aqua;
         color: $white;
         border-radius: 0 15px 15px 0;
         transition: all 400ms; /* Ajouter une transition pour une animation fluide */
+        opacity: 0;
       }
 
       & li:hover .fa-check-circle {
-        display: flex;
-        transform: translateX(0);
+        transform: translateX(15px);
+        opacity: 1;
       }
     }     
 

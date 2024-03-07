@@ -231,23 +231,24 @@ main {
   transition: all 500ms;
 }
 .menu li:hover b {
-  transform: translateX(-30px);
+  transform: translateX(-50px);
 }
 .menu .fa-check-circle {
-  display: none;
+  display: flex;
   justify-content: center;
   align-items: center;
   width: 59px;
   height: 69px;
-  transform: translateX(60px);
+  transform: translateX(40px);
   background-color: #99E2D0;
   color: #fff;
   border-radius: 0 15px 15px 0;
   transition: all 400ms; /* Ajouter une transition pour une animation fluide */
+  opacity: 0;
 }
 .menu li:hover .fa-check-circle {
-  display: flex;
-  transform: translateX(0);
+  transform: translateX(15px);
+  opacity: 1;
 }
 
 /*# sourceMappingURL=menu.css.map */
