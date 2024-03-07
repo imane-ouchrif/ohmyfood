@@ -217,7 +217,7 @@ main {
   transform: translateX(0px);
   transition: all 300ms;
 }
-.menu:hover b {
+.menu li:hover b {
   transform: translateX(-30px);
 }
 .menu .fa-check-circle {
@@ -232,7 +232,7 @@ main {
   border-radius: 0 15px 15px 0;
   transition: all 300ms; /* Ajouter une transition pour une animation fluide */
 }
-.menu:hover .fa-check-circle {
+.menu li:hover .fa-check-circle {
   transform: translateX(0);
 }
 
