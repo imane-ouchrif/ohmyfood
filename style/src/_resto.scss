@@ -33,32 +33,7 @@ main {
     padding-bottom: 40px;
 }
 
-.heart {
-  border: none;
-  background-color: $silver;
-  padding: 0;
 
-  & > * {
-    position: absolute;
-    top: 65%;
-    right: 30px;
-    color: $purple;
-  }
-  .fa-solid.fa-heart {
-    opacity: 0;
-    transition-duration: 1s;
-  }
-  .fa-regular.fa-heart {
-    opacity: 1;
-  }
-  &:hover .fa-solid.fa-heart {
-    opacity: 1;
-  }
-  &:hover .fa-regular.fa-heart {
-    opacity: 0;
-  } 
-
-}
 
 .menu {
     width: 100%;

@@ -84,6 +84,31 @@ footer i {
   border: none;
 }
 
+.heart {
+  border: none;
+  background-color: #F6F6F6;
+  padding: 0;
+}
+.heart > * {
+  position: absolute;
+  top: 65%;
+  right: 30px;
+  color: #9356DC;
+}
+.heart .fa-solid.fa-heart {
+  opacity: 0;
+  transition-duration: 1s;
+}
+.heart .fa-regular.fa-heart {
+  opacity: 1;
+}
+.heart:hover .fa-solid.fa-heart {
+  opacity: 1;
+}
+.heart:hover .fa-regular.fa-heart {
+  opacity: 0;
+}
+
 /* *************** HOME *************** */
 /***************** main header *****************/
 main header {
