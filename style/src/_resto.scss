@@ -29,11 +29,14 @@ body > header {
 /* *************** MAIN *************** */
 
 main {
-    background-color: $silver;
     padding-bottom: 1px;
 }
 
-
+.fa-heart {
+    position: absolute;
+    top: 65%;
+    right: 30px;
+}
 
 .menu {
     width: 100%;
