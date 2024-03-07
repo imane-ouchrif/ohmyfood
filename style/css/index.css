@@ -67,7 +67,8 @@ footer i {
   height: 13px;
 }
 
-.btn { /* button menu */
+/***************** design btn *****************/
+.btn {
   display: flex;
   color: #fff;
   width: 200px;
@@ -84,6 +85,7 @@ footer i {
   border: none;
 }
 
+/***************** design heart *****************/
 .heart {
   border: none;
   background-color: #F6F6F6;
