@@ -45,21 +45,45 @@ footer {
   background: #353535;
   gap: 16px;
 }
+@media (min-width: 1200px) {
+  footer {
+    flex-direction: row-reverse;
+    padding: 30px 25px;
+  }
+}
 footer img {
   width: 100px;
   height: 30px;
   filter: invert(100%);
   object-fit: contain;
 }
+@media (min-width: 1200px) {
+  footer {
+    align-self: flex-end;
+  }
+}
 footer a {
   color: #fff;
   font-size: 1rem;
   font-weight: 500;
 }
+@media (min-width: 1200px) {
+  footer a {
+    font-weight: 400;
+  }
+}
 footer ul {
   display: flex;
   flex-direction: column;
   gap: 7px;
+}
+@media (min-width: 1200px) {
+  footer ul {
+    display: flex;
+    flex-direction: row;
+    padding-top: 10px;
+    gap: 20px;
+  }
 }
 footer i {
   margin-right: 11px;
