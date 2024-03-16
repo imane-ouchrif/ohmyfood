@@ -146,13 +146,14 @@ footer {
   border: none;
   background-color: $silver;
   padding: 0;
+  font-size: larger;
 
   & > * {
     color: $purple;
   }
   .fa-solid.fa-heart {
     opacity: 0;
-    transition-duration: 1s;
+    transition-duration: 3500ms;
   }
   .fa-regular.fa-heart {
     opacity: 1;
@@ -163,5 +164,13 @@ footer {
   &:hover .fa-regular.fa-heart {
     opacity: 0;
   } 
+
+  @media (min-width: 1200px) {
+    & {
+      position: absolute;
+      right: 20px;
+      bottom: 10px;
+    }
+  }
 
 }
