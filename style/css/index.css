@@ -114,13 +114,14 @@ footer i {
   border: none;
   background-color: #F6F6F6;
   padding: 0;
+  font-size: larger;
 }
 .heart > * {
   color: #9356DC;
 }
 .heart .fa-solid.fa-heart {
   opacity: 0;
-  transition-duration: 1s;
+  transition-duration: 3500ms;
 }
 .heart .fa-regular.fa-heart {
   opacity: 1;
@@ -130,6 +131,13 @@ footer i {
 }
 .heart:hover .fa-regular.fa-heart {
   opacity: 0;
+}
+@media (min-width: 1200px) {
+  .heart {
+    position: absolute;
+    right: 20px;
+    bottom: 10px;
+  }
 }
 
 /* *************** HOME *************** */
@@ -161,7 +169,6 @@ main header input {
   font-size: 1rem;
   background-color: #EAEAEA;
   width: 115px;
-  height: 7vh;
 }
 main header section {
   background: #F6F6F6;
