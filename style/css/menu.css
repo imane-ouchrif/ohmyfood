@@ -251,15 +251,26 @@ main main img {
     width: 634px;
   }
 }
+.menu li > section {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
 .menu h3 {
   margin: 0;
   font-size: 1rem;
   width: 287px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .menu p {
   margin: 0;
   width: 287px;
   font-size: 0.8rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .menu b {
   display: flex;
