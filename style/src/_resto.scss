@@ -122,16 +122,28 @@ main {
         }
       }
 
+      li > section {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+
       h3 {
         margin: 0;
         font-size: 1rem;
         width: 287px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
       }
 
       p {
         margin: 0;
         width: 287px;
         font-size: 0.8rem;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
       }
 
       b {
