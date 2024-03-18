@@ -14,8 +14,8 @@ $slate: #353535;
 $gray: #7E7E7E;
 $white: #fff;
 
-$btn: linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%);
-$heart: linear-gradient(0deg, #FF79DA, #9356DC);
+$btn: linear-gradient(1deg, #9356DC -20.44%, #FF79DA 129.93%);
+$heart: linear-gradient(to bottom, #FF79DA, #9356DC 80%);
 
 
 /***************** global style *****************/
@@ -149,7 +149,7 @@ footer {
   font-size: larger;
 
   & > * {
-    color: $purple;
+    color: $heart;
   }
   .fa-solid.fa-heart {
     opacity: 0;
@@ -163,6 +163,7 @@ footer {
   }
   &:hover .fa-regular.fa-heart {
     opacity: 0;
+    color: $heart;
   } 
 
   @media (min-width: 1200px) {
