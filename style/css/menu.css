@@ -115,10 +115,7 @@ footer i {
   border: none;
   background-color: #F6F6F6;
   padding: 0;
-  font-size: larger;
-}
-.heart > * {
-  color: linear-gradient(to bottom, #FF79DA, #9356DC 80%);
+  font-size: large;
 }
 .heart .fa-solid.fa-heart {
   opacity: 0;
@@ -129,9 +126,6 @@ footer i {
 }
 .heart:hover .fa-solid.fa-heart {
   opacity: 1;
-}
-.heart:hover .fa-regular.fa-heart {
-  opacity: 0;
   color: linear-gradient(to bottom, #FF79DA, #9356DC 80%);
 }
 @media (min-width: 1200px) {
@@ -183,7 +177,18 @@ main {
   top: 65%;
   right: 30px;
 }
+@media (min-width: 1200px) {
+  .fa-heart {
+    left: 35px;
+    top: -12px;
+  }
+}
 
+@media (min-width: 1200px) {
+  .menu section {
+    /*code*/
+  }
+}
 .menu {
   width: 100%;
   display: flex;
