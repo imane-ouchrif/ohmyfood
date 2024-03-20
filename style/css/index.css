@@ -114,10 +114,7 @@ footer i {
   border: none;
   background-color: #F6F6F6;
   padding: 0;
-  font-size: larger;
-}
-.heart > * {
-  color: linear-gradient(to bottom, #FF79DA, #9356DC 80%);
+  font-size: large;
 }
 .heart .fa-solid.fa-heart {
   opacity: 0;
@@ -128,9 +125,6 @@ footer i {
 }
 .heart:hover .fa-solid.fa-heart {
   opacity: 1;
-}
-.heart:hover .fa-regular.fa-heart {
-  opacity: 0;
   color: linear-gradient(to bottom, #FF79DA, #9356DC 80%);
 }
 @media (min-width: 1200px) {
@@ -299,6 +293,11 @@ main header p {
   margin-top: -5px;
   border-radius: 0 0 15px 15px;
 }
+@media (min-width: 1200px) {
+  .restaurants figcaption {
+    padding-bottom: 20px;
+  }
+}
 .restaurants img {
   border-radius: 15px 15px 0 0;
   height: 200px;
@@ -332,6 +331,11 @@ main header p {
   bottom: 30px;
   width: 22px;
   height: 21px;
+}
+@media (min-width: 1200px) {
+  .restaurants .fa-heart {
+    bottom: 20px;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */
