@@ -146,11 +146,8 @@ footer {
   border: none;
   background-color: $silver;
   padding: 0;
-  font-size: larger;
+  font-size: large;
 
-  & > * {
-    color: $heart;
-  }
   .fa-solid.fa-heart {
     opacity: 0;
     transition-duration: 3500ms;
@@ -160,11 +157,8 @@ footer {
   }
   &:hover .fa-solid.fa-heart {
     opacity: 1;
-  }
-  &:hover .fa-regular.fa-heart {
-    opacity: 0;
     color: $heart;
-  } 
+  }
 
   @media (min-width: 1200px) {
     & {
