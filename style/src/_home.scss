@@ -15,6 +15,7 @@
   position: fixed;
   z-index: 9999;
   animation: fadeInOut 2500ms forwards;
+  pointer-events: none;
 }
 
 .loader span {
