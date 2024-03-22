@@ -192,8 +192,28 @@ main {
 }
 
 @media (min-width: 1200px) {
-  .menu section {
-    /*code*/
+  .menu section:nth-of-type(1),
+  .menu section:nth-of-type(3) {
+    animation: slide1-3 2000ms;
+  }
+  .menu section:nth-of-type(2) {
+    animation: slide2 2000ms;
+  }
+  @keyframes slide1-3 {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+  @keyframes slide2 {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(0);
+    }
   }
 }
 .menu {
