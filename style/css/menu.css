@@ -127,13 +127,16 @@ footer i {
 .heart .fa-solid.fa-heart {
   opacity: 0;
   transition-duration: 3500ms;
+  background-image: linear-gradient(to bottom, #FF79DA, #9356DC 80%); /* Utilisation du dégradé linéaire comme arrière-plan */
+  background-clip: text; /* Permet au dégradé d'être appliqué au texte */
+  -webkit-background-clip: text;
+  color: transparent; /* Rend le texte transparent pour laisser apparaître le dégradé */
 }
 .heart .fa-regular.fa-heart {
   opacity: 1;
 }
 .heart:hover .fa-solid.fa-heart {
   opacity: 1;
-  color: linear-gradient(to bottom, #FF79DA, #9356DC 80%);
 }
 @media (min-width: 1200px) {
   .heart {
@@ -191,31 +194,33 @@ main {
   }
 }
 
-@media (min-width: 1200px) {
-  .menu section:nth-of-type(1),
-  .menu section:nth-of-type(3) {
-    animation: slide1-3 2000ms;
+/* *************** animation menus *************** */
+.menu section:nth-of-type(1),
+.menu section:nth-of-type(3) {
+  animation: slide1-3 2000ms;
+}
+
+.menu section:nth-of-type(2) {
+  animation: slide2 2000ms;
+}
+
+@keyframes slide1-3 {
+  from {
+    transform: translateX(100%);
   }
-  .menu section:nth-of-type(2) {
-    animation: slide2 2000ms;
-  }
-  @keyframes slide1-3 {
-    from {
-      transform: translateX(100%);
-    }
-    to {
-      transform: translateX(0);
-    }
-  }
-  @keyframes slide2 {
-    from {
-      transform: translateX(-100%);
-    }
-    to {
-      transform: translateX(0);
-    }
+  to {
+    transform: translateX(0);
   }
 }
+@keyframes slide2 {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+/* *************** RESTO *************** */
 .menu {
   width: 100%;
   display: flex;

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* *************** LAYOUT *************** */
 /***************** global style *****************/
 body {
@@ -126,13 +127,16 @@ footer i {
 .heart .fa-solid.fa-heart {
   opacity: 0;
   transition-duration: 3500ms;
+  background-image: linear-gradient(to bottom, #FF79DA, #9356DC 80%); /* Utilisation du dégradé linéaire comme arrière-plan */
+  background-clip: text; /* Permet au dégradé d'être appliqué au texte */
+  -webkit-background-clip: text;
+  color: transparent; /* Rend le texte transparent pour laisser apparaître le dégradé */
 }
 .heart .fa-regular.fa-heart {
   opacity: 1;
 }
 .heart:hover .fa-solid.fa-heart {
   opacity: 1;
-  color: linear-gradient(to bottom, #FF79DA, #9356DC 80%);
 }
 @media (min-width: 1200px) {
   .heart {
@@ -158,6 +162,7 @@ footer i {
   position: fixed;
   z-index: 9999;
   animation: fadeInOut 2500ms forwards;
+  pointer-events: none;
 }
 
 .loader span {
