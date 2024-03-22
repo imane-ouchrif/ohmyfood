@@ -52,7 +52,7 @@ main {
     }
 }
 
-@media (min-width: 1200px) {
+/* *************** animation menus *************** */
   .menu section:nth-of-type(1),
   .menu section:nth-of-type(3) {
       animation: slide1-3 2000ms;
@@ -79,8 +79,8 @@ main {
       transform: translateX(0);
     }
   }
-  }
 
+/* *************** RESTO *************** */
 .menu {
     width: 100%;
     display: flex;
