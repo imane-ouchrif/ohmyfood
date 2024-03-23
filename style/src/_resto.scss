@@ -159,28 +159,24 @@ main {
         }
       }
 
-      li > section {
+      li:hover h3,
+      li:hover p {
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap;
+        max-width: calc(100% - 80px); /* Ajustez la largeur en fonction de la largeur de l'élément <fa-check-circle> */
       }
 
       h3 {
         margin: 0;
         font-size: 1rem;
         width: 287px;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
       }
 
       p {
         margin: 0;
         width: 287px;
         font-size: 0.8rem;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
       }
 
       b {
@@ -197,7 +193,7 @@ main {
         transform: translateX(-50px);
       }
 
-      .fa-check-circle {
+      li .fa-check-circle {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -215,5 +211,5 @@ main {
         transform: translateX(15px);
         opacity: 1;
       }
-    }     
+    }
 

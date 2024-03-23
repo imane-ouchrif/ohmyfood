@@ -290,26 +290,22 @@ main {
     width: 634px;
   }
 }
-.menu li > section {
+.menu li:hover h3,
+.menu li:hover p {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  max-width: calc(100% - 80px); /* Ajustez la largeur en fonction de la largeur de l'élément <fa-check-circle> */
 }
 .menu h3 {
   margin: 0;
   font-size: 1rem;
   width: 287px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
 }
 .menu p {
   margin: 0;
   width: 287px;
   font-size: 0.8rem;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
 }
 .menu b {
   display: flex;
@@ -324,7 +320,7 @@ main {
 .menu li:hover b {
   transform: translateX(-50px);
 }
-.menu .fa-check-circle {
+.menu li .fa-check-circle {
   display: flex;
   justify-content: center;
   align-items: center;
