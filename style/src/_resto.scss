@@ -41,7 +41,7 @@ main {
 
 .fa-heart {
     position: absolute;
-    top: 65%;
+    top: 29px;
     right: 30px;
 
     @media (min-width: 1200px) {
@@ -53,31 +53,38 @@ main {
 }
 
 /* *************** animation menus *************** */
-  .menu section:nth-of-type(1),
-  .menu section:nth-of-type(3) {
-      animation: slide1-3 2000ms;
-    }
-
-  .menu section:nth-of-type(2) {
-    animation: slide2 2000ms;
+@keyframes slide {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
   }
-
-  @keyframes slide1-3 {
-    from {
-      transform: translateX(100%);
-    }
-    to {
-      transform: translateX(0);
-    }
+  to {
+    transform: translateX(0);
+    opacity: 1;
   }
+}
 
-  @keyframes slide2 {
-    from {
-      transform: translateX(-100%);
+@keyframes hide {
+  from {
+    opacity: 0;
+  }
+  99% {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+  .menu > section:nth-of-type(1) {
+      animation: slide 1s;
     }
-    to {
-      transform: translateX(0);
-    }
+
+  .menu > section:nth-of-type(2) {
+    animation: slide 1s 0.5s, hide 0.5s;
+  }
+  .menu > section:nth-of-type(3) {
+    animation: slide 1s 1s, hide 1s;
   }
 
 /* *************** RESTO *************** */
@@ -159,23 +166,23 @@ main {
         }
       }
 
+      @media (max-width: 400px) {
       li:hover h3,
       li:hover p {
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap;
-        max-width: calc(100% - 80px); /* Ajustez la largeur en fonction de la largeur de l'élément <fa-check-circle> */
+        max-width: calc(100% - 10px); /* Ajustez la largeur en fonction de la largeur de l'élément <fa-check-circle> */
+        }
       }
 
       h3 {
         margin: 0;
         font-size: 1rem;
-        width: 287px;
       }
 
       p {
         margin: 0;
-        width: 287px;
         font-size: 0.8rem;
       }
 
@@ -198,7 +205,7 @@ main {
         justify-content: center;
         align-items: center;
         width: 59px;
-        height: 69px;                                    
+        height: 69px;
         transform: translateX(40px); 
         background-color: $aqua;
         color: $white;
