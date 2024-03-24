@@ -122,7 +122,7 @@ footer i {
   border: none;
   background-color: #F6F6F6;
   padding: 0;
-  font-size: large;
+  font-size: x-large;
 }
 .heart .fa-solid.fa-heart {
   opacity: 0;
@@ -137,13 +137,6 @@ footer i {
 }
 .heart:hover .fa-solid.fa-heart {
   opacity: 1;
-}
-@media (min-width: 1200px) {
-  .heart {
-    position: absolute;
-    right: 20px;
-    bottom: 10px;
-  }
 }
 
 /* *************** RESTO *************** */
@@ -184,7 +177,7 @@ main {
 
 .fa-heart {
   position: absolute;
-  top: 65%;
+  top: 29px;
   right: 30px;
 }
 @media (min-width: 1200px) {
@@ -195,31 +188,39 @@ main {
 }
 
 /* *************** animation menus *************** */
-.menu section:nth-of-type(1),
-.menu section:nth-of-type(3) {
-  animation: slide1-3 2000ms;
-}
-
-.menu section:nth-of-type(2) {
-  animation: slide2 2000ms;
-}
-
-@keyframes slide1-3 {
+@keyframes slide {
   from {
     transform: translateX(100%);
+    opacity: 0;
   }
   to {
     transform: translateX(0);
+    opacity: 1;
   }
 }
-@keyframes slide2 {
+@keyframes hide {
   from {
-    transform: translateX(-100%);
+    opacity: 0;
+  }
+  99% {
+    opacity: 0;
   }
   to {
-    transform: translateX(0);
+    opacity: 1;
   }
 }
+.menu > section:nth-of-type(1) {
+  animation: slide 1s;
+}
+
+.menu > section:nth-of-type(2) {
+  animation: slide 1s 0.5s, hide 0.5s;
+}
+
+.menu > section:nth-of-type(3) {
+  animation: slide 1s 1s, hide 1s;
+}
+
 /* *************** RESTO *************** */
 .menu {
   width: 100%;
@@ -290,21 +291,21 @@ main {
     width: 634px;
   }
 }
-.menu li:hover h3,
-.menu li:hover p {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  max-width: calc(100% - 80px); /* Ajustez la largeur en fonction de la largeur de l'élément <fa-check-circle> */
+@media (max-width: 400px) {
+  .menu li:hover h3,
+  .menu li:hover p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: calc(100% - 10px); /* Ajustez la largeur en fonction de la largeur de l'élément <fa-check-circle> */
+  }
 }
 .menu h3 {
   margin: 0;
   font-size: 1rem;
-  width: 287px;
 }
 .menu p {
   margin: 0;
-  width: 287px;
   font-size: 0.8rem;
 }
 .menu b {
