@@ -154,7 +154,7 @@ footer {
   border: none;
   background-color: $silver;
   padding: 0;
-  font-size: large;
+  font-size: x-large;
 
   .fa-solid.fa-heart {
     opacity: 0;
@@ -171,13 +171,5 @@ footer {
 
   &:hover .fa-solid.fa-heart {
     opacity: 1;
-  }
-
-  @media (min-width: 1200px) {
-    & {
-      position: absolute;
-      right: 20px;
-      bottom: 10px;
-    }
   }
 }
