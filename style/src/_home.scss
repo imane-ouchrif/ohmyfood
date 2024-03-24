@@ -281,15 +281,17 @@ main header {
       display: flex;
       position: absolute;
       right: 20px;
-      bottom: 30px;
-      width: 22px;
-      height: 21px;
+      bottom: 35px;
+      width: 24px;
+      height: 22px;
     }
 
-    @media (min-width: 1200px) {
-      .fa-heart {
-        bottom: 20px;
+      @media (min-width: 1200px) {
+        .heart {
+          position: absolute;
+          right: 20px;
+          bottom: 10px;
+        }
       }
     }
-  }
 
