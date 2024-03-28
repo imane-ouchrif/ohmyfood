@@ -31,6 +31,12 @@ body > header {
 main {
     padding-bottom: 1px;
 
+    img[src*="stil-u2Lp8tXIcjw-unsplash.jpg"] {
+      width: 100%; /* Définir une largeur fixe ou relative pour garantir une taille uniforme */
+      height: 240px; /* Assurer le maintien des proportions de l'image */
+      max-width: 100%; /* Limiter la largeur maximale de l'image */
+    }
+
     @media  (min-width: 1200px) {
       & > img {
         width: 100%;
