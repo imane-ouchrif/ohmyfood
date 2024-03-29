@@ -43,7 +43,7 @@ main {
         height: 450px;
       }
     }
-}
+  }
 
 .fa-heart {
     position: absolute;
@@ -52,8 +52,8 @@ main {
 
     @media (min-width: 1200px) {
       & {
-        left: 35px;
-        top: -12px;
+        right: 20px;
+        bottom: 7px;
       }
     }
 }
