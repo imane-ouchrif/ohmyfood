@@ -283,35 +283,35 @@ main img[src*="stil-u2Lp8tXIcjw-unsplash.jpg"] {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 90%;
+  width: 100%;
   height: 69px;
   position: relative;
   background-color: #fff;
   border-radius: 15px;
   box-shadow: 0px 4.011px 15.043px 0px rgba(0, 0, 0, 0.1);
-  padding: 0 15px 0;
 }
 @media (min-width: 1200px) {
   .menu li {
     width: 634px;
   }
 }
-@media (max-width: 400px) {
-  .menu li:hover h3,
-  .menu li:hover p {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    max-width: calc(100% - 10px); /* Ajustez la largeur en fonction de la largeur de l'élément <fa-check-circle> */
-  }
+.menu li section {
+  padding: 0 0 0 15px;
+}
+.menu li:hover section > h3,
+.menu li:hover section > p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: calc(100% - 10px); /* Ajustez la largeur en fonction de la largeur de l'élément <fa-check-circle> */
 }
 .menu h3 {
   margin: 0;
-  font-size: 1rem;
+  font-size: 0.9rem;
 }
 .menu p {
   margin: 0;
-  font-size: 0.8rem;
+  font-size: 0.85rem;
 }
 .menu b {
   display: flex;
@@ -340,7 +340,7 @@ main img[src*="stil-u2Lp8tXIcjw-unsplash.jpg"] {
   opacity: 0;
 }
 .menu li:hover .fa-check-circle {
-  transform: translateX(15px);
+  transform: translateX(0px);
   opacity: 1;
 }
 
