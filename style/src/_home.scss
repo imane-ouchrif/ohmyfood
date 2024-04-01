@@ -1,41 +1,5 @@
 /* *************** HOME *************** */
 /***************** loader design *****************/
-
-.loader {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-  font-size: 3rem;
-  font-weight: bold;
-  font-family: 'Shrikhand', cursive;
-  background-color: $aqua;
-  color: $slate;
-  position: fixed;
-  z-index: 9999;
-  animation: fadeInOut 2500ms forwards;
-  pointer-events: none;
-}
-
-.loader span {
-  position: relative;
-}
-
-.loader span:after {
-  content: '';
-  width: 300px;
-  height: 300px;
-  position: absolute;
-  top: -190%;
-  left: -35%;
-  border: 20px solid $slate;
-  border-radius: 50%;
-  border-top-color: $purple;
-  animation: spin 2500ms linear forwards;
-
-}
-
 @keyframes spin {
   to {
     transform: rotate(360deg);
@@ -56,8 +20,41 @@
     100% {
       opacity: 0;
     }
+  }
+
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  font-size: 3rem;
+  font-weight: bold;
+  font-family: 'Shrikhand', cursive;
+  background-color: $purple;
+  color: $slate;
+  position: fixed;
+  z-index: 9999;
+  animation: fadeInOut 2500ms forwards;
+  pointer-events: none;
 }
 
+.loader span {
+  position: relative;
+}
+
+.loader span:after {
+  content: '';
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  top: -190%;
+  left: -35%;
+  border: 20px solid $slate;
+  border-radius: 50%;
+  border-top-color: $aqua;
+  animation: spin 2500ms linear forwards;
+}
 /***************** main header *****************/
 
 main header {
