@@ -126,7 +126,7 @@ footer i {
 }
 .heart .fa-solid.fa-heart {
   opacity: 0;
-  transition-duration: 3500ms;
+  transition-duration: 2500ms;
   background-image: linear-gradient(to bottom, #FF79DA, #9356DC 80%); /* Utilisation du dégradé linéaire comme arrière-plan */
   background-clip: text; /* Permet au dégradé d'être appliqué au texte */
   -webkit-background-clip: text;
