@@ -380,6 +380,7 @@ main header p {
 }
 .restaurants p {
   margin: 0;
+  padding-bottom: 12px;
   font-weight: 300;
   font-size: 1rem;
 }
@@ -387,7 +388,7 @@ main header p {
   display: flex;
   position: absolute;
   right: 20px;
-  bottom: 35px;
+  bottom: 30px;
   width: 24px;
   height: 22px;
 }
@@ -395,7 +396,7 @@ main header p {
   .restaurants .heart {
     position: absolute;
     right: 20px;
-    bottom: 10px;
+    bottom: 15px;
   }
 }
 

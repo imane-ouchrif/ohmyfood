@@ -55,6 +55,7 @@
   border-top-color: $aqua;
   animation: spin 2500ms linear forwards;
 }
+
 /***************** main header *****************/
 
 main header {
@@ -270,6 +271,7 @@ main header {
   
     p {
       margin: 0;
+      padding-bottom: 12px;
       font-weight: 300;
       font-size: 1rem;
     }
@@ -278,7 +280,7 @@ main header {
       display: flex;
       position: absolute;
       right: 20px;
-      bottom: 35px;
+      bottom: 30px;
       width: 24px;
       height: 22px;
     }
@@ -287,7 +289,7 @@ main header {
         .heart {
           position: absolute;
           right: 20px;
-          bottom: 10px;
+          bottom: 15px;
         }
       }
     }
