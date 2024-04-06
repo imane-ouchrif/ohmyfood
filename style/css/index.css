@@ -219,7 +219,7 @@ main header form .fa-solid {
 main header input {
   display: flex;
   border: none;
-  font-size: 1rem;
+  font-size: 0.9rem;
   background-color: #EAEAEA;
   width: 115px;
 }
