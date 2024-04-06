@@ -183,7 +183,6 @@ main {
         max-width: calc(100% - 10px); /* Ajustez la largeur en fonction de la largeur de l'élément <fa-check-circle> */
 
         @media (min-width: 400px) {
-          text-overflow: none;
           white-space: normal;
           max-width: 100%;
           }
