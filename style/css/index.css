@@ -31,10 +31,10 @@ a {
 .logo {
   display: flex;
   justify-content: center;
-  padding: 14px 89px 13px 89px;
+  padding: 14px 5px 13px 5px;
 }
-.logo .logo img {
-  padding: 0 19px 0 16px;
+.logo img {
+  width: 200px;
 }
 
 /***************** footer *****************/
