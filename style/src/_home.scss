@@ -173,8 +173,7 @@ main header {
       color: $gray;
     }
 
-    li:hover i,
-    li:focus i{
+    li .fa-store {
       color: $purple;
     }
 

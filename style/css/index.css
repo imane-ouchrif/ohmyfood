@@ -296,8 +296,7 @@ main header p {
 .function i {
   color: #7E7E7E;
 }
-.function li:hover i,
-.function li:focus i {
+.function li .fa-store {
   color: #9356DC;
 }
 
