@@ -181,7 +181,7 @@ main {
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap;
-        max-width: calc(100% - 10px); /* Ajustez la largeur en fonction de la largeur de l'élément <fa-check-circle> */
+        max-width: calc(100% - 30px); /* Ajustez la largeur en fonction de la largeur de l'élément <fa-check-circle> */
 
         @media (min-width: 400px) {
           white-space: normal;
